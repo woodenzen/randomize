@@ -9,7 +9,7 @@ Output is formatted in the Markdown link format.
 - Navigate to the directory where you want to clone the repository.
 - Clone the repository by running the following command: `git clone https://github.com/woodenzen/randomize.git`
 - Once the repository has been cloned, navigate into the repository directory: cd randomize
-- Install any dependencies required by the repository. In this case, the only dependency needed is `date_utils`. Add `date_utils` with your favorite dependency manager.
+- Install any dependencies required by the repository. In this case, the only dependency needed is `date_utils`. Add `date_utils` with your favorite dependency manager. Mine is Poetry and contained in the download is my `pyproject.toml` file, so if you have Poerty installed you should be able to run `poetry install` and create a virtual environment with the dependency installed for you.
 - The repository should now be installed and ready to use.
 
 
