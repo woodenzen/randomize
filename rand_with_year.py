@@ -1,13 +1,23 @@
 import os, re, random
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
+from archive_path import TheArchivePath
     
-def zkrand(number):
-    target_dir = "/Users/will/Dropbox/zettelkasten"
+def rand_with_year(num=1):
+    """
+    Returns a specified number of random notes from The Archive that were last modified within the last year.
+
+    Args:
+        num (int, optional): The number of notes with year. Defaults to 1.
+
+    Returns:
+        None: The function prints out the MMD formatted links to the random notes.
+    """
+    target_dir = TheArchivePath()
     counter = 0
     # Set counter to the number of notes wanted to be returned.
-    print(f'## {number} random notes from the past.')
-    while counter < number:
+    print(f'## {num} random notes from the past.')
+    while counter < num:
         # Create a variable "random+file" that contains a randomixed list of the files,
         random_file=random.choices(os.listdir(target_dir))
         # d = a year month day
@@ -28,4 +38,4 @@ def zkrand(number):
                 counter += 1
                     
 if __name__ == "__main__":
-    zkrand(10)
+    rand_with_year(10)

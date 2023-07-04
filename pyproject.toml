@@ -9,6 +9,8 @@ packages = [{include = "random_zettel"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+datetime = "^5.1"
+dateutils = "^0.6.12"
 
 
 [build-system]

@@ -7,6 +7,16 @@ from archive_path import TheArchivePath
 
     
 def zkrand(num=1):
+    """
+    Returns a specified number of random notes from The Archive that were last modified within the last year.
+
+    Args:
+        num (int, optional): The number of notes to return. Defaults to 1.
+
+    Returns:
+        None: The function prints out the MMD formatted links to the random notes.
+    """
+def zkrand(num=1):
     target_dir = TheArchivePath()
     counter = 0
     # Set counter to the number of notes wanted to be returned. 
@@ -30,4 +40,4 @@ def zkrand(num=1):
                 counter += 1
                     
 if __name__ == "__main__":
-    zkrand(15)
+    zkrand(5)
