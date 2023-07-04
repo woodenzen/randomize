@@ -1,5 +1,6 @@
 # The Archive Random Functions
-Install along with archive_path.py with is the function that will identify the path to your active The Archive directory.
+Install along with archive_path.py. This is the function that will identify the path to your active The Archive directory.
+Output is formatted in the Markdown link format.
 
 
 # Install
@@ -11,8 +12,6 @@ Install along with archive_path.py with is the function that will identify the p
 - Install any dependencies required by the repository. In this case, the only dependency needed is `date_utils`. Add `date_utils` with your favorite dependency manager.
 - The repository should now be installed and ready to use.
 
-
-`git install https://github.com/woodenzen/randomize.git`
 
 ## Usage (Example)
 ## 1. zkrandom.py
@@ -45,7 +44,8 @@ Install along with archive_path.py with is the function that will identify the p
 ```
 ## 3. rand_size.py
 - call rand_size(800, 1400, 6) - specifying the min word count, max word count, and number of random notes returned
-### Sample Output
+- output is in a clickable Markdown link. 
+- ### Sample Output
 ```
   801 words: [In Praise of Walking](thearchive://match/In Praise of Walking 202206270813)
  1225 words: [U-ENGL473](thearchive://match/U-ENGL473 202012212010)
