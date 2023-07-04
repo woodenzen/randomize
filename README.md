@@ -1,5 +1,18 @@
 # The Archive Random Functions
-Install along with archive_path.py wih is the function that will identify the path to your active The Archive directory.
+Install along with archive_path.py with is the function that will identify the path to your active The Archive directory.
+
+
+# Install
+
+- Open a terminal or command prompt.
+- Navigate to the directory where you want to clone the repository.
+- Clone the repository by running the following command: `git clone https://github.com/woodenzen/randomize.git`
+- Once the repository has been cloned, navigate into the repository directory: cd randomize
+- Install any dependencies required by the repository. In this case, the only dependency needed is `date_utils`. Add `date_utils` with your favorite dependency manager.
+- The repository should now be installed and ready to use.
+
+
+`git install https://github.com/woodenzen/randomize.git`
 
 ## Usage (Example)
 ## 1. zkrandom.py
@@ -30,18 +43,16 @@ Install along with archive_path.py wih is the function that will identify the pa
 2019 [Liberate even the antidote](thearchive://match/Liberate even the antidote 201901240524)
 2022 [How-to: Annotate like a pro](thearchive://match/How-to: Annotate like a pro 202211240933)
 ```
-
-
 ## 3. rand_size.py
 - call rand_size(800, 1400, 6) - specifying the min word count, max word count, and number of random notes returned
 ### Sample Output
 ```
-B-Down and Out 202302101625 has 1077 words.
-Welcome to The Archive 201902010000 has 1223 words.
-Editing Checklist 202002081650 has 846 words.
-Tools for thought: science, design, art, craftsmanship 202201011020 has 877 words.
-Transference 202301081245 has 899 words.
-A-On Food and Happiness 202302082008 has 877 words.
+  801 words: [In Praise of Walking](thearchive://match/In Praise of Walking 202206270813)
+ 1225 words: [U-ENGL473](thearchive://match/U-ENGL473 202012212010)
+  845 words: [B-Personal Knowledge Graphs](thearchive://match/B-Personal Knowledge Graphs 202306232125)
+ 1013 words: [B-The Book Of Form And Emptiness](thearchive://match/B-The Book Of Form And Emptiness 202207231714)
+  851 words: [Silence as ear cleaning](thearchive://match/Silence as ear cleaning 202208200754)
+  903 words: [Course Description](thearchive://match/Course Description 202101121907)
 ```
 
 

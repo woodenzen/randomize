@@ -17,7 +17,7 @@ def random_size(minsize, maxsize, num=1):
         num (int, optional): The number of files to select. Defaults to 1.
         
     Returns:
-        None: The function prints out a list of random notes between minsize and maxsize.
+        None: The function prints out a list of random notes between minsize and maxsize in a Mardown link format.
     """
     target_dir = TheArchivePath()
     files = os.listdir(target_dir)
@@ -31,9 +31,9 @@ def random_size(minsize, maxsize, num=1):
             data = file.read()
             words = data.split()
             if len(words) > minsize and len(words) < maxsize:
-                print(f"{file_name} has {len(words)} words.")
+                print(f"{len(words):>5} words: [{file_name[:-13]}](thearchive://match/{file_name})") # print(f"{file_name} has {len(words)} words.")
                 zettel+=1
         continue            
-        return print(f"{file_name} has {len(words)} words.")            
+        return 
 if __name__ == "__main__":
     random_size(800, 1400, 6)
