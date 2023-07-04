@@ -6,18 +6,18 @@ Install along with archive_path.py wih is the function that will identify the pa
 - call zkrand(5) - the number specifies the number of random notes returned.
 - output is in a clickable Markdown link. 
 ### Sample Output
-[zkrandom](./media/zkrandom.png)
+![zkrandom](./media/zkrandom.png)
 
 2. rand_with_year.py
 - call rand_with_year(10) - the number specifies the number of random notes returned
 - output is in a clickable Markdown link. 
 ### Sample Output
-[rand_with_year](./media/rand_with_year.png)
+![rand_with_year](./media/rand_with_year.png)
 
 3. rand_size.py
 - call rand_size(800, 1400, 6) - specifying the min word count, max word count, and number of random notes returned
 ### Sample Output
-[rand_size](./media/rand_size.png)
+![rand_size](./media/rand_size.png)
 
 ## Licience
 [MIT](./LICENSE.md)
