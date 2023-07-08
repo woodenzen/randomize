@@ -16,7 +16,6 @@ def zkrand(num=1):
     Returns:
         None: The function prints out the MMD formatted links to the random notes.
     """
-def zkrand(num=1):
     target_dir = TheArchivePath()
     counter = 0
     # Set counter to the number of notes wanted to be returned. 
